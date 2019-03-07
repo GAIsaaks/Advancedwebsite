@@ -1,0 +1,22 @@
+{
+  "name": "advancedcss01",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/iconfont.css css/style.comp.css",
+    "prefix:css": "postcss -use autoprefixer -b"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Geraldo Isaaks",
+  "license": "ISC",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {}
+}
